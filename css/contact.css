@@ -1,0 +1,31 @@
+/* Contact Section */
+.contact-section {
+    background: var(--gradient-primary);
+    color: white;
+}
+
+.contact-section .section-title {
+    color: white;
+}
+
+.contact-section .section-number {
+    color: var(--accent-color);
+}
+
+.contact-section .section-title::after {
+    background: linear-gradient(to right, rgba(255, 255, 255, 0.3), transparent);
+}
+
+.contact-description {
+    font-size: 1.25rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 2.5rem;
+    line-height: 1.7;
+}
+
+.contact-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    justify-content: center;
+}

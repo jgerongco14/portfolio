@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projects - Rendel Jeff A. Gerongco</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/projects.css" />
+  </head>
+  <body>
+    <!-- Projects Section -->
+    <section id="projects" class="section projects-section">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2 class="section-title" data-aos="fade-up">Featured Projects</h2>
+          </div>
+        </div>
+        <div class="project-filters" data-aos="fade-up" data-aos-delay="100">
+          <button class="filter-btn active" data-filter="all">
+            All Projects
+          </button>
+          <button class="filter-btn" data-filter="web">Web</button>
+          <button class="filter-btn" data-filter="mobile">Mobile</button>
+          <button class="filter-btn" data-filter="desktop">Desktop</button>
+        </div>
+        <div class="row" id="projects-container"></div>
+        <!-- Project Full Story Modal -->
+        <div
+          class="modal fade"
+          id="projectModal"
+          tabindex="-1"
+          aria-labelledby="projectModalLabel"
+          aria-hidden="true"
+        >
+          <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="projectModalLabel">
+                  Project Title
+                </h5>
+                <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+                ></button>
+              </div>
+              <div class="modal-body">
+                <div class="row align-items-center">
+                  <div class="col-md-5 mb-3 mb-md-0">
+                    <img
+                      id="projectModalImg"
+                      src=""
+                      alt="Project Image"
+                      class="img-fluid rounded w-100 d-block mx-auto"
+                      style="
+                        max-height: 320px;
+                        max-width: 100%;
+                        object-fit: contain;
+                      "
+                    />
+                  </div>
+                  <div class="col-md-7">
+                    <div id="projectModalFullStory" class="mb-3"></div>
+                    <div id="projectModalTechnologies" class="mb-2"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

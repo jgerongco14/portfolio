@@ -165,7 +165,7 @@ function renderEducation() {
       .join("");
 
     educationHTML += `
-      <div class="col-lg-6">
+      <div class="col-12 mb-4">
         <div class="education-item" data-aos="fade-up" data-aos-delay="${index * 100}">
           <h5 class="education-degree">
             <i class="fas fa-graduation-cap me-2"></i>${edu.degree}
@@ -209,7 +209,7 @@ function renderAchievements() {
     }
 
     achievementsHTML += `
-      <div class="col-lg-6">
+      <div class="col-lg-4 col-md-6 col-12 mb-4">
         <div class="achievement-item" data-aos="fade-up" data-aos-delay="${index * 100}">
           <h5 class="achievement-title">
             <i class="fas ${icon} me-2"></i>${achievement.title}

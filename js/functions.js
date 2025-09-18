@@ -254,7 +254,7 @@ function setupProjectFilters() {
           item.style.transform = "scale(1)";
         } else {
           const platform = item.getAttribute("data-platform");
-          if (platform === filter) {
+          if (platform && platform.split(',').map(p => p.trim()).includes(filter)) {
             item.style.display = "block";
             setTimeout(() => {
               item.style.opacity = "1";
